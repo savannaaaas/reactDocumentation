@@ -37,7 +37,7 @@ export const NavButtons = ({ title }) => {
   };
   return (
     <div className="buttons">
-      {getCurrentTopic(currentTitle) > 0 && (
+      {getCurrentTopic(currentTitle) && (
         <Button
           variant="contained"
           className="navigate-button"
@@ -59,4 +59,25 @@ export const NavButtons = ({ title }) => {
       )}
     </div>
   );
+
+  // const topics = data.map((e) => {
+  //   const { title, path } = e;
+  //   return { title, path };
+  // });
+  // const getCurrentTopic = (title) => {
+  //   return topics.findIndex((topic) => topic.title == title);
+  // };
+  // const getBackNextTopic = (title) => {
+  //   const current = getCurrentTopic(title);
+  //   const back = current > 0 ? topics[current - 1] : null;
+  //   const next = current < topics.length - 1 ? topics[current + 1] : null;
+  //   return (
+  //     <>
+  //       {/* {back && ( */}
+
+  //       {/* )} */}
+  //     </>
+  //   );
+  // };
+  // return <div className="buttons">{getBackNextTopic(title)}</div>;
 };

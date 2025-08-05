@@ -6,7 +6,7 @@ import reactLogo from "../../../assets/react.svg";
 import "../index.scss";
 import { IconButton } from "@mui/material";
 
-export const Header = (props, ref) => {
+export const Header =(props, ref) => {
   return (
     <header ref={ref} className="header" {...props}>
       <IconButton
@@ -36,4 +36,4 @@ export const Header = (props, ref) => {
       </IconButton>
     </header>
   );
-};
+});

@@ -8,7 +8,7 @@ import "./index.scss";
 import { NavButtons } from "../../components/Navigation/NavButtons";
 import { BoldText } from "../../components/BoldText/BoldText";
 
-export const Topic = ({ title, content = [] }) => {
+export const Topic = React.memo(({ title, content = [], path }) => {
   const getValue = useCallback(() => {
     return content.map((item) => {
       const [[key, value]] = Object.entries(item);
@@ -37,7 +37,8 @@ export const Topic = ({ title, content = [] }) => {
       {getValue(content).map((item, index) => (
         <Fragment key={index}>{item}</Fragment>
       ))}
-      <NavButtons title={title} />
+      <NavButtons title={title} path={path} />
     </>
   );
-};
+});
+//

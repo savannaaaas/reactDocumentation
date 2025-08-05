@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
-import { data } from "./data/data";
 import { WelcomePage } from "./pages/welcomePage/WelcomePage";
 import { TopicPage } from "./pages/topicPage/TopicPage";
+import { data } from "./data/data";
 import { Topic } from "./pages/topicPage/Topic";
 import { NotFound } from "./pages/notFoundPage/NotFound";
 import "./index.scss";

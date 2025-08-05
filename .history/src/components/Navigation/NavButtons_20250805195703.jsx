@@ -20,6 +20,7 @@ export const NavButtons = ({ title }) => {
   };
   const getNextTopic = () => {
     const current = getCurrentTopic(currentTitle);
+
     if (current >= 0 && current < topics.length - 1) {
       const nextTopic = topics[current + 1];
       setCurrentTitle(nextTopic.title);
@@ -37,26 +38,43 @@ export const NavButtons = ({ title }) => {
   };
   return (
     <div className="buttons">
-      {getCurrentTopic(currentTitle) > 0 && (
-        <Button
-          variant="contained"
-          className="navigate-button"
-          startIcon={<ArrowBackIosNewIcon />}
-          onClick={getBackTopic}
-        >
-          <NavLink className="navigate-button">Back topic</NavLink>
-        </Button>
-      )}
-      {getCurrentTopic(currentTitle) < topics.length - 1 && (
-        <Button
-          variant="contained"
-          className="navigate-button"
-          endIcon={<ArrowForwardIosIcon />}
-          onClick={getNextTopic}
-        >
-          <NavLink className="navigate-button">Next topic</NavLink>
-        </Button>
-      )}
+      <Button
+        variant="contained"
+        className="navigate-button"
+        startIcon={<ArrowBackIosNewIcon />}
+        onClick={getBackTopic}
+      >
+        <NavLink className="navigate-button">Back topic</NavLink>
+      </Button>
+      <Button
+        variant="contained"
+        className="navigate-button"
+        endIcon={<ArrowForwardIosIcon />}
+        onClick={getNextTopic}
+      >
+        <NavLink className="navigate-button">Next topic</NavLink>
+      </Button>
     </div>
   );
+
+  // const topics = data.map((e) => {
+  //   const { title, path } = e;
+  //   return { title, path };
+  // });
+  // const getCurrentTopic = (title) => {
+  //   return topics.findIndex((topic) => topic.title == title);
+  // };
+  // const getBackNextTopic = (title) => {
+  //   const current = getCurrentTopic(title);
+  //   const back = current > 0 ? topics[current - 1] : null;
+  //   const next = current < topics.length - 1 ? topics[current + 1] : null;
+  //   return (
+  //     <>
+  //       {/* {back && ( */}
+
+  //       {/* )} */}
+  //     </>
+  //   );
+  // };
+  // return <div className="buttons">{getBackNextTopic(title)}</div>;
 };

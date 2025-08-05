@@ -19,7 +19,7 @@ export const TopicPage = () => {
       container.scrollTo({ top, behavior: "smooth" });
     }
   }
-
+  //Everytime when change pathname
   useEffect(() => {
     scrollToElementWithOffset(
       ".scrollable-content",
