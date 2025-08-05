@@ -7,6 +7,8 @@ import { Grid } from "@mui/material";
 
 export const TopicPage = React.memo(() => {
   const location = useLocation();
+  const hasContent =
+    location.pathname.startsWith("/topic/") || location.pathname !== "/topic";
   function scrollToElementWithOffset(
     containerSelector,
     elementSelector,
