@@ -1,0 +1,27 @@
+.importantBox {
+  display: flex;
+  width: 150vh;
+  height: 10vh;
+  margin: 0 auto;
+  text-align: justify;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: monospace;
+}
+[data-theme="light"] {
+  .importantBox {
+    border-left: 4px solid red;
+    background-color: rgba(245, 3, 3, 0.292);
+  }
+}
+[data-theme="dark"] {
+  .importantBox {
+    border-left: 4px solid red;
+    background-color: rgb(95, 95, 95);
+    color: rgb(232, 232, 232);
+  }
+}

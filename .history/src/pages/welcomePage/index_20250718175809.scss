@@ -1,0 +1,46 @@
+
+$light-color: rgb(242, 118, 138);   
+$dark-color : #ffffff;   
+
+.header {
+  background-color: rgb(227, 153, 153);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+
+.base-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ @media (prefers-color-scheme: dark) {
+    color: $dark-color;
+  }
+
+  p {
+    a {
+      color: rgb(242, 118, 138);
+      text-decoration: none;
+      @media (prefers-color-scheme: dark) {
+    color: $dark-color;
+  }
+    }
+  }
+}
+
+
+.welcome-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}

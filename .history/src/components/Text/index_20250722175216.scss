@@ -1,0 +1,17 @@
+.text{
+text-align: justify;
+font-size: medium;
+
+}
+[data-theme="light"] 
+{
+ .text{
+color: black;
+}
+}
+[data-theme="dark"] 
+{
+ .text{
+color: aliceblue;
+}
+}

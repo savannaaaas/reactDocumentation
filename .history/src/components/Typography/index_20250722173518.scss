@@ -1,0 +1,16 @@
+.typography{
+    margin: 20px auto;
+}
+[data-theme="light"] 
+{
+    .typography{
+    color: black;
+}
+}
+[data-theme="dark"] 
+{
+    .typography{
+ 
+    color: black;
+}
+}

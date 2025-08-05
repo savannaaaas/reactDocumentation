@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root[data-theme="light"] {
+  --background-color: #fafafa;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #2b3e51;
+}

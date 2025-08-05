@@ -1,0 +1,15 @@
+$text-color-dark: aliceblue;
+$text-color-light: black;
+
+.textBold {
+}
+[data-theme="light"] {
+  .textBold {
+    color: $text-color-light;
+  }
+}
+[data-theme="dark"] {
+  .textBold {
+    color: $text-color-dark;
+  }
+}

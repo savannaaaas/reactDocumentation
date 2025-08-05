@@ -1,0 +1,19 @@
+$text-color-light:aliceblue;
+.text{
+text-align: justify;
+font-size: medium;
+line-height: 1.5;
+letter-spacing: 2px;
+}
+[data-theme="light"] 
+{
+ .text{
+color: black;
+}
+}
+[data-theme="dark"] 
+{
+ .text{
+color: aliceblue;
+}
+}

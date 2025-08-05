@@ -1,0 +1,24 @@
+.navigate-button {
+background-color: #ffffff;
+
+}
+.navigate-button.active{
+background-color: #ffffff;
+}
+[data-theme="light"] {
+  .list{
+    background-color:#313139;
+  }
+  .navigate-button {
+
+  }
+}
+
+[data-theme="dark"] {
+  .list{
+background-color:#ffffff
+  }
+  .navigate-button {
+    
+  }
+}

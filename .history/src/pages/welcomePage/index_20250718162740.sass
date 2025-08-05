@@ -1,0 +1,52 @@
+// Задаём цвета фонов
+$light-bg: #ffffff;   // замените на нужный вам светлый цвет
+$dark-bg : #222222;   // замените на нужный вам тёмный цвет
+
+.header {
+  background-color: rgb(227, 153, 153);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+// Общие стили для контент-блоков
+%base-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: rgb(242, 118, 138);
+
+  p {
+    a {
+      color: rgb(242, 118, 138);
+      text-decoration: none;
+    }
+  }
+}
+
+// Светлая версия
+.light-content {
+  @extend %base-content;
+  background-color: $light-bg;
+}
+
+// Тёмная версия
+.dark-content {
+  @extend %base-content;
+  background-color: $dark-bg;
+}
+
+.welcome-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,15 @@
+.text{
+
+}
+[data-theme="light"] 
+{
+ .text{
+color: black;
+}
+}
+[data-theme="dark"] 
+{
+ .text{
+color: aliceblue;
+}
+}

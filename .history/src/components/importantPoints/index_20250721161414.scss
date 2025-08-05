@@ -1,0 +1,29 @@
+
+.importantBox { 
+    display: flex;
+    width: 150vh;
+    height: 10vh;
+    margin: 0 auto;
+    text-align: justify;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: monospace;
+}
+[data-theme="light"] {
+  
+}
+
+[data-theme="dark"] {
+    .importantBox{
+        border-left: 4px solid red;
+        background-color: rgb(77, 76, 76);
+        color: aliceblue;
+    }
+      
+  
+}
+

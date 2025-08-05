@@ -1,0 +1,18 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  .btn{
+     width: 200px;
+              fontSize: "14px",
+              borderRadius: "40px",
+              backgroundColor: "rgba(236, 141, 156, 1)",
+              color: "#ffff",
+  }
+}

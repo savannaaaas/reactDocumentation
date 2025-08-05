@@ -1,0 +1,21 @@
+.navigate-button {
+
+
+}
+[data-theme="light"] {
+  .list{
+    background-color:#313139;
+  }
+  .navigate-button {
+
+  }
+}
+
+[data-theme="dark"] {
+  .list{
+background-color:#ffffff
+  }
+  .navigate-button {
+    
+  }
+}

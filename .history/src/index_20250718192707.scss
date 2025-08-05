@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color);
+}
+
+:root[data-theme="light"] {
+  --background-color: #fafafa;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #313139;
+}
+
+[data-theme="light"] {
+ .navigation{
+
+ }
+  
+}
+[data-theme="dark"] {
+  .navigation{
+
+  }
+
+}

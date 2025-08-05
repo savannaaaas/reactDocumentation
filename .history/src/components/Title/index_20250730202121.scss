@@ -1,0 +1,20 @@
+@use "../Text/index";
+.title {
+  text-align: center;
+  font-size: medium;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+[data-theme="light"] {
+  .title {
+    color: index.$text-color-light;
+  }
+}
+[data-theme="dark"] {
+  .title {
+    color: index.$text-color-dark;
+  }
+}

@@ -1,0 +1,46 @@
+.header{
+  background-color: rgb(227, 153, 153);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+.light-welcome{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: rgb(242, 118, 138);
+}
+.light-welcome p a{
+   color: rgb(242, 118, 138);
+   text-decoration: none;
+  
+}
+.dark-welcome{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  color: rgb(242, 118, 138);
+}
+.dark-welcome p a{
+   color: rgb(242, 118, 138);
+   text-decoration: none;
+  
+}
+.welcome-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  
+}

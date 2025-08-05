@@ -1,0 +1,18 @@
+@use "../Text/index";
+
+.typography {
+  margin: 20px auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+[data-theme="light"] {
+  .typography {
+    color: index.$text-color-light;
+  }
+}
+[data-theme="dark"] {
+  .typography {
+    color: index.$text-color-dark;
+  }
+}

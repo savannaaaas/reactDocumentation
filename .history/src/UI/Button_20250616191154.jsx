@@ -1,0 +1,4 @@
+import Button from "@mui/material/Button";
+export const Button = ({ children, ...props }) => {
+  return <ButtonCustom {...props}>{children}</ButtonCustom>;
+};

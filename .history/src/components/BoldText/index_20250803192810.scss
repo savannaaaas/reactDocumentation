@@ -1,0 +1,23 @@
+$text-color-dark: aliceblue;
+$text-color-light: black;
+
+.text-bold {
+  text-align: justify;
+  font-size: medium;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  font-weight: bold;
+  // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+}
+[data-theme="light"] {
+  .text-bold {
+    color: $text-color-light;
+  }
+}
+[data-theme="dark"] {
+  .text-bold {
+    color: $text-color-dark;
+  }
+}

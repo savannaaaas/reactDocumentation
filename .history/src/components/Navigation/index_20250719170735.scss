@@ -1,0 +1,22 @@
+.navigate-button {
+width: 200px;
+font-size: 14px ;
+border-radius: 30%;
+}
+[data-theme="light"] {
+  .list{
+    background-color:#313139;
+  }
+  .navigate-button {
+
+  }
+}
+
+[data-theme="dark"] {
+  .list{
+background-color:#ffffff
+  }
+  .navigate-button {
+    
+  }
+}

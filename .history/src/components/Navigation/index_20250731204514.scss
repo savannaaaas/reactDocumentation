@@ -1,0 +1,27 @@
+.navigate-button {
+  width: 150px;
+  border-radius: 60%;
+  &.active {
+    text-decoration: none;
+  }
+}
+
+[data-theme="light"] {
+  .list {
+    background-color: #ffffff;
+  }
+  .navigate-button {
+    background-color: rgb(242, 118, 138);
+    color: #ffffff;
+  }
+}
+
+[data-theme="dark"] {
+  .list {
+    background-color: #313139;
+  }
+  .navigate-button {
+    background-color: #ffffff;
+    color: rgb(242, 118, 138);
+  }
+}

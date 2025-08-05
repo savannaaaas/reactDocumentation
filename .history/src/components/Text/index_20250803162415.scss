@@ -1,0 +1,24 @@
+$text-color-dark: aliceblue;
+$text-color-light: black;
+.text {
+  text-align: justify;
+  font-size: medium;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding: 10px;
+}
+[data-theme="light"] {
+  .text {
+    color: $text-color-light;
+  }
+  .text-bold {
+  }
+}
+[data-theme="dark"] {
+  .text {
+    color: $text-color-dark;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+}
