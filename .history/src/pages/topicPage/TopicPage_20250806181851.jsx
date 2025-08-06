@@ -1,11 +1,12 @@
-import React from "react";
+import React, { lazy } from "react";
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router";
 import { Header } from "../welcomePage/Header/Header";
 import { Navigation } from "../../components/Navigation/Navigation";
 import { Grid } from "@mui/material";
 
-function TopicPage() {
+export const LazyTopicPage = lazy(() => import("./TopicPage"));
+const TopicPage = () => {
   const location = useLocation();
   function scrollToElementWithOffset(
     containerSelector,
@@ -65,5 +66,4 @@ function TopicPage() {
       </Grid>
     </>
   );
-}
-export default TopicPage;
+};

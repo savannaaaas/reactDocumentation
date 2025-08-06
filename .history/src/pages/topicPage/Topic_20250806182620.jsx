@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { lazy, useCallback } from "react";
 import { ImportantPoints } from "../../components/ImportantPoints/ImportantPoints";
 import { Fragment } from "react/jsx-runtime";
 import { Code } from "../../components/Code/Code";
@@ -8,7 +8,7 @@ import "./index.scss";
 import { NavButtons } from "../../components/Navigation/NavButtons";
 import { BoldText } from "../../components/BoldText/BoldText";
 
-function Topic({ title, content = [] }) {
+export const Topic = ({ title, content = [] }) => {
   const getValue = useCallback(() => {
     return content.map((item) => {
       const [[key, value]] = Object.entries(item);
@@ -40,5 +40,4 @@ function Topic({ title, content = [] }) {
       <NavButtons title={title} />
     </>
   );
-}
-export default Topic;
+};

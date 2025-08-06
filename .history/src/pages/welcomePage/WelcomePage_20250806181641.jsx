@@ -2,8 +2,8 @@ import { WelcomeButton } from "./WelcomeButton/WelcomeButton";
 import { Header } from "./Header/Header";
 import { WelcomeContent } from "./Content/ContentWelcome";
 import "./index.scss";
-
-function WelcomePage() {
+export const LazyWelcomePage = lazy(() => import("./LazyComponent"));
+const WelcomePage = () => {
   return (
     <div className={"welcome-page"}>
       <Header />
@@ -11,5 +11,4 @@ function WelcomePage() {
       <WelcomeButton />
     </div>
   );
-}
-export default WelcomePage;
+};

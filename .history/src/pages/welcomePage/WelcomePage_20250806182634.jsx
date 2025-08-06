@@ -1,9 +1,10 @@
+import { lazy } from "react";
 import { WelcomeButton } from "./WelcomeButton/WelcomeButton";
 import { Header } from "./Header/Header";
 import { WelcomeContent } from "./Content/ContentWelcome";
 import "./index.scss";
 
-function WelcomePage() {
+export const WelcomePage = () => {
   return (
     <div className={"welcome-page"}>
       <Header />
@@ -11,5 +12,4 @@ function WelcomePage() {
       <WelcomeButton />
     </div>
   );
-}
-export default WelcomePage;
+};

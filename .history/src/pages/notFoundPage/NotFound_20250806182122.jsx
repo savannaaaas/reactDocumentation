@@ -1,12 +1,13 @@
-import { routes } from "../../routes/Routes";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { NavLink, useNavigate } from "react-router";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
 import { ButtonNavigate } from "../../components/Navigation/ButtonNavigate";
 import "./index.scss";
-
-function NotFound() {
+import { routes } from "../../routes/Routes";
+import { lazy } from "react";
+export const LazyNotFound = lazy(() => import("./NotFound"));
+const NotFound = () => {
   const navigate = useNavigate();
   return (
     <div className="not-found">
@@ -30,5 +31,4 @@ function NotFound() {
       </Grid>
     </div>
   );
-}
-export default NotFound;
+};

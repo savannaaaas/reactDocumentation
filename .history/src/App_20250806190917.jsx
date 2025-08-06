@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import { data } from "./data/data";
 import { routes } from "./routes/Routes";
 import { lazy, Suspense } from "react";
+import { WelcomePage } from "./pages/welcomePage/WelcomePage";
 import Loading from "./components/Loading/Loading";
 import "./index.scss";
 
@@ -12,9 +13,9 @@ const LazyNotFound = lazy(() => import("./pages/notFoundPage/NotFound"));
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <Routes>
-        <Route path={routes.MAIN} element={<LazyWelcomePage />} />
+    <Routes>
+      <Route path={routes.MAIN} element={<LazyWelcomePage />} />
+      <Suspense fallback={<Loading />}>
         <Route path={routes.TOPIC.BASE} element={<LazyTopicPage />}>
           <Route
             path={routes.TOPIC.COMPONENTS}
@@ -158,8 +159,8 @@ function App() {
           />
         </Route>
         <Route path={routes.NOT_FOUND} element={<LazyNotFound />} />
-      </Routes>
-    </Suspense>
+      </Suspense>
+    </Routes>
   );
 }
 

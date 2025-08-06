@@ -2,19 +2,19 @@ import { Routes, Route } from "react-router";
 import { data } from "./data/data";
 import { routes } from "./routes/Routes";
 import { lazy, Suspense } from "react";
+import { WelcomePage } from "./pages/welcomePage/WelcomePage";
 import Loading from "./components/Loading/Loading";
 import "./index.scss";
 
-const LazyWelcomePage = lazy(() => import("./pages/welcomePage/WelcomePage"));
 const LazyTopicPage = lazy(() => import("./pages/topicPage/TopicPage"));
 const LazyTopic = lazy(() => import("./pages/topicPage/Topic"));
 const LazyNotFound = lazy(() => import("./pages/notFoundPage/NotFound"));
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <Routes>
-        <Route path={routes.MAIN} element={<LazyWelcomePage />} />
+    <Routes>
+      <Route path={routes.MAIN} element={<WelcomePage />} />
+      <Suspense fallback={<Loading />}>
         <Route path={routes.TOPIC.BASE} element={<LazyTopicPage />}>
           <Route
             path={routes.TOPIC.COMPONENTS}
@@ -158,8 +158,8 @@ function App() {
           />
         </Route>
         <Route path={routes.NOT_FOUND} element={<LazyNotFound />} />
-      </Routes>
-    </Suspense>
+      </Suspense>
+    </Routes>
   );
 }
 

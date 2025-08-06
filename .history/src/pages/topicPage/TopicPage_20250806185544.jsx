@@ -5,7 +5,7 @@ import { Header } from "../welcomePage/Header/Header";
 import { Navigation } from "../../components/Navigation/Navigation";
 import { Grid } from "@mui/material";
 
-function TopicPage() {
+function TopicPage{
   const location = useLocation();
   function scrollToElementWithOffset(
     containerSelector,
@@ -65,5 +65,4 @@ function TopicPage() {
       </Grid>
     </>
   );
-}
-export default TopicPage;
+};

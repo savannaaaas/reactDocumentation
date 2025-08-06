@@ -12,8 +12,8 @@ const LazyNotFound = lazy(() => import("./pages/notFoundPage/NotFound"));
 
 function App() {
   return (
-    <Suspense fallback={<Loading />}>
-      <Routes>
+    <Routes>
+      <Suspense fallback={<Loading />}>
         <Route path={routes.MAIN} element={<LazyWelcomePage />} />
         <Route path={routes.TOPIC.BASE} element={<LazyTopicPage />}>
           <Route
@@ -158,8 +158,8 @@ function App() {
           />
         </Route>
         <Route path={routes.NOT_FOUND} element={<LazyNotFound />} />
-      </Routes>
-    </Suspense>
+      </Suspense>
+    </Routes>
   );
 }
 

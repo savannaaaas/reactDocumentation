@@ -158,7 +158,7 @@ function App() {
           />
         </Route>
         <Route path={routes.NOT_FOUND} element={<LazyNotFound />} />
-      </Routes>
+      </Routes>{" "}
     </Suspense>
   );
 }
