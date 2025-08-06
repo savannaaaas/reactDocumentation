@@ -134,7 +134,7 @@ export const Navigation = () => {
         <ListItem disablePadding>
           <ButtonNavigate
             component={NavLink}
-            to={routes.TOPIC.BASE + `/${routes.TOPIC.REACT_ROUTER}`}
+            to="/topic/react-router"
             fullWidth
           >
             React Router

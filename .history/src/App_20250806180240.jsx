@@ -93,7 +93,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.FRAGMENT}
+          path={routes.FRAGMENT}
           element={
             <Topic
               title={data[8].title}
@@ -103,7 +103,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.REACT_MEMO}
+          path={routes.REACT_MEMO}
           element={
             <Topic
               title={data[9].title}
@@ -113,7 +113,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.USEEFFECT}
+          path={routes.USEEFFECT}
           element={
             <Topic
               title={data[10].title}
@@ -123,7 +123,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.USECONTEXT}
+          path={routes.USECONTEXT}
           element={
             <Topic
               title={data[11].title}
@@ -133,7 +133,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.USEMEMO}
+          path={routes.USEMEMO}
           element={
             <Topic
               title={data[12].title}
@@ -143,7 +143,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.REACT_ROUTER}
+          path={routes.REACT_ROUTER}
           element={
             <Topic
               title={data[13].title}

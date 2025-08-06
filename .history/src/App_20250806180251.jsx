@@ -133,7 +133,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.USEMEMO}
+          path={routes.USEMEMO}
           element={
             <Topic
               title={data[12].title}
@@ -143,7 +143,7 @@ function App() {
           }
         />
         <Route
-          path={routes.TOPIC.REACT_ROUTER}
+          path={routes.REACT_ROUTER}
           element={
             <Topic
               title={data[13].title}

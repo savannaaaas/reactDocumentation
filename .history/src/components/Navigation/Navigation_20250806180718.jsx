@@ -123,18 +123,14 @@ export const Navigation = () => {
           </ButtonNavigate>
         </ListItem>
         <ListItem disablePadding>
-          <ButtonNavigate
-            component={NavLink}
-            to={routes.TOPIC.BASE + `/${routes.TOPIC.USEMEMO}`}
-            fullWidth
-          >
+          <ButtonNavigate component={NavLink} to="/topic/useMemo" fullWidth>
             useMemo
           </ButtonNavigate>
         </ListItem>
         <ListItem disablePadding>
           <ButtonNavigate
             component={NavLink}
-            to={routes.TOPIC.BASE + `/${routes.TOPIC.REACT_ROUTER}`}
+            to="/topic/react-router"
             fullWidth
           >
             React Router

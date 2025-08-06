@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import { data } from "../../data/data";
-import { NavLink, useNavigate } from "react-router";
-import { routes } from "../../routes/Routes";
 import { Button, Grid } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { data } from "../../data/data";
 import "./index.scss";
-
+import { NavLink, useNavigate } from "react-router";
 export const NavButtons = ({ title }) => {
   const navigate = useNavigate();
   const [currentTitle, setCurrentTitle] = useState(title);
@@ -25,7 +23,7 @@ export const NavButtons = ({ title }) => {
     if (current >= 0 && current < topics.length - 1) {
       const nextTopic = topics[current + 1];
       setCurrentTitle(nextTopic.title);
-      navigate(`${routes.TOPIC.BASE}/${nextTopic.path}`);
+      navigate(`/topic/${nextTopic.path}`);
     }
   };
   const getBackTopic = () => {
@@ -34,7 +32,7 @@ export const NavButtons = ({ title }) => {
     if (current > 0) {
       const backTopic = topics[current - 1];
       setCurrentTitle(backTopic.title);
-      navigate(`${routes.TOPIC.BASE}/${backTopic.path}`);
+      navigate(`/topic/${backTopic.path}`);
     }
   };
   return (
@@ -61,4 +59,25 @@ export const NavButtons = ({ title }) => {
       )}
     </div>
   );
+
+  // const topics = data.map((e) => {
+  //   const { title, path } = e;
+  //   return { title, path };
+  // });
+  // const getCurrentTopic = (title) => {
+  //   return topics.findIndex((topic) => topic.title == title);
+  // };
+  // const getBackNextTopic = (title) => {
+  //   const current = getCurrentTopic(title);
+  //   const back = current > 0 ? topics[current - 1] : null;
+  //   const next = current < topics.length - 1 ? topics[current + 1] : null;
+  //   return (
+  //     <>
+  //       {/* {back && ( */}
+
+  //       {/* )} */}
+  //     </>
+  //   );
+  // };
+  // return <div className="buttons">{getBackNextTopic(title)}</div>;
 };

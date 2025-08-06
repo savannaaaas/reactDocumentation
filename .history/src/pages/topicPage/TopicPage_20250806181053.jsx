@@ -19,6 +19,7 @@ export const TopicPage = () => {
       container.scrollTo({ top, behavior: "smooth" });
     }
   }
+
   useEffect(() => {
     scrollToElementWithOffset(
       ".scrollable-content",
