@@ -8,9 +8,10 @@ export default function Loading() {
         justifyContent: "center",
         alignItems: "center",
         height: "100vh",
+        backgroundColor: "rgb(227, 153, 153);",
       }}
     >
-      <CircularProgress size={100} sx={{ color: "rgb(227, 153, 153);" }} />
+      <CircularProgress size={100} />
     </Box>
   );
 }

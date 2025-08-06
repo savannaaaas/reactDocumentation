@@ -10,7 +10,7 @@ export default function Loading() {
         height: "100vh",
       }}
     >
-      <CircularProgress size={100} sx={{ color: "rgb(227, 153, 153);" }} />
+      <CircularProgress size={100} />
     </Box>
   );
 }
